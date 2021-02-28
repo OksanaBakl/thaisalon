@@ -5,6 +5,7 @@
   --accent-color: #ff817e;
   --text-color: #555555;
   --title-color: #263a41;
+  --item-color: #888888;
 }
 body {
   font-family: var(--main-font);
@@ -81,7 +82,7 @@ body {
   font-size: 20px;
   letter-spacing: 2px;
   line-height: 2.7;
-  color: #888888;
+  color: var(--item-color);
   font-weight: 400;
   font-family: var(--main-font);
   text-align: center;
@@ -124,4 +125,114 @@ body {
   font-family: var(--secondary-font);
   text-align: center;
 }
-.section-description
+.section-description {
+  width: 674px;
+  height: 43px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--item-color);
+  font-weight: 300;
+  font-family: var(--main-font);
+  text-align: center;
+}
+.title-prof {
+  font-size: 22px;
+  line-height: 1.22;
+  color: var(--title-color) 1;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+.item-description {
+  width: 292px;
+  height: 72px;
+  font-size: 14px;
+  line-height: 1.92;
+  color: var(--item-color);
+  font-weight: 300;
+  font-family: var(--main-font);
+  text-align: center;
+}
+.content-description {
+  width: 974px;
+  height: 89px;
+  font-size: 18px;
+  line-height: 1.94;
+  color: var(--title-color);
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+.client-name {
+  font-size: 22px;
+  line-height: 1.59;
+  color: var(--title-color);
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+.form-text {
+  font-size: 12px;
+  line-height: 4.58;
+  color: #999999;
+  font-weight: 400;
+  font-family: var(--main-font);
+}
+.form-notes {
+  font-size: 12px;
+  line-height: 4.58;
+  color: var(--item-color);
+  font-weight: 400;
+  font-family: var(--main-font);
+}
+.form-btn {
+  font-size: 14px;
+  line-height: 3.9;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: var(--main-font);
+  text-align: center;
+  background-color: var(--accent-color);
+}
+.adress-link {
+  font-size: 14px;
+  line-height: 1.92;
+  color: var(--item-color);
+  font-weight: 400;
+  font-family: var(--main-font);
+}
+.adress-form {
+  font-size: 12px;
+  line-height: 2.25;
+  color: #999999;
+  font-weight: 300;
+  font-family: var(--main-font);
+}
+.adress-btn {
+  font-size: 13px;
+  line-height: 2.07;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: var(--main-font);
+  text-align: center;
+  background-color: var(--accent-color);
+}
+.logo-footer {
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 2.4;
+  color: #211833;
+  font-weight: 400;
+  font-family: var(--logo-font);
+}
+.copyright {
+  font-size: 13px;
+  line-height: 1.92;
+  color: var(--item-color);
+  font-weight: 400;
+  font-family: var(--main-font);
+  text-align: center;
+}
+.copy-link {
+  color: var(--accent-color);
+}
