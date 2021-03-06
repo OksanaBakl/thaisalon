@@ -179,7 +179,6 @@ img {
   margin-bottom: 71px;
 }
 .read-more-link {
-  /* display: block; */
   font-size: 13px;
   width: 171px;
   letter-spacing: 1px;
@@ -192,9 +191,10 @@ img {
   border-radius: 25px;
   padding: 21px 48px;
   text-transform: uppercase;
+}
+.read {
   margin: 0 auto;
 }
-
 .section-title {
   font-size: 42px;
   line-height: 0.64;
@@ -239,6 +239,29 @@ img {
 }
 .procedures-list {
   display: flex;
+  margin-top: -28px;
+  margin-left: -28px;
+}
+.procedures-item {
+  flex-basis: calc(100% / 3 - 28px);
+  margin-top: 28px;
+  margin-left: 28px;
+  width: 360px;
+  border: 1px solid #e3e6ea;
+  text-align: center;
+}
+.procedures-img {
+  padding: 20px;
+  padding-bottom: 0;
+}
+.procedures .read-more-link {
+  max-width: 141px;
+  text-align: center;
+  padding: 19px 29px 17px 41px;
+}
+.procedure-desc {
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 .title-prof {
   font-size: 22px;
@@ -247,26 +270,43 @@ img {
   font-weight: 700;
   font-family: var(--secondary-font);
   text-align: center;
+  padding: 20px 0;
 }
 .item-description {
-  width: 292px;
-  height: 72px;
   font-size: 14px;
   line-height: 1.92;
   color: var(--item-color);
   font-weight: 300;
   font-family: var(--main-font);
   text-align: center;
+  padding: 0 40px;
+  margin-bottom: 44px;
+}
+
+/* CONTENT */
+.content {
+  padding-bottom: 207px;
+  background-color: #fff9f8;
+}
+.quote {
+  margin: 0 auto 50px;
+}
+.jack {
+  border-radius: 38px;
+  margin: 0 auto 15px;
+}
+.content-list {
+  width: 964px;
+  text-align: center;
+  margin: 0 auto;
 }
 .content-description {
-  width: 974px;
-  height: 89px;
   font-size: 18px;
   line-height: 1.94;
   color: var(--title-color);
   font-weight: 400;
   font-family: var(--secondary-font);
-  text-align: center;
+  margin-bottom: 45px;
 }
 .client-name {
   font-size: 22px;
@@ -275,6 +315,40 @@ img {
   font-weight: 400;
   font-family: var(--secondary-font);
   text-align: center;
+}
+/* OUR TEAM */
+.our-team {
+  padding-top: 139px;
+  padding-bottom: 214px;
+}
+.our-team .section-description {
+  margin-bottom: 94px;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.team-cont {
+  width: 360px;
+}
+.team-description {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #888888;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+}
+.social-list {
+  display: flex;
+  align-items: center;
 }
 .form-text {
   font-size: 12px;
