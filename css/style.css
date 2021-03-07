@@ -123,7 +123,16 @@ img {
   font-family: var(--main-font);
   text-align: right;
 }
-.hero-btn {
+.video-img {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff9f8;
+}
+` .hero-btn {
   display: inline-block;
   font-size: 13px;
   /* line-height: 5.53; */
@@ -138,8 +147,14 @@ img {
   margin-right: 54px;
 }
 /* ABOUT */
+.about-salon {
+  padding-top: 205px;
+  padding-bottom: 70px;
+}
 .about-salon .container {
-  padding-top: 240px;
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
 }
 .about-logo {
   margin-left: auto;
@@ -179,22 +194,21 @@ img {
   margin-bottom: 71px;
 }
 .read-more-link {
+  display: inline-block;
+  margin: 0 auto;
   font-size: 13px;
-  min-width: 171px;
   letter-spacing: 1px;
-  line-height: 2.15;
   color: #ffffff;
   font-weight: 500;
   font-family: var(--main-font);
   text-align: center;
-  background-color: var(--accent-color);
-  border-radius: 25px;
+  background-color: #30383b;
+  border-radius: 35px;
   padding: 21px 48px;
   text-transform: uppercase;
 }
 .section-title {
   font-size: 42px;
-  line-height: 0.64;
   color: var(--title-color);
   font-weight: 700;
   font-family: var(--secondary-font);
@@ -212,11 +226,17 @@ img {
 }
 /* FEATURES */
 .features {
-  padding-top: 127px;
+  padding-top: 70px;
 }
+
+.features .container,
 .features-list {
+  width: 100%;
+  max-width: 1920px;
   display: flex;
+  justify-content: space-between;
 }
+
 .features-item:not(:last-child) {
   margin-right: 4px;
 }
@@ -246,16 +266,17 @@ img {
   width: 360px;
   border: 1px solid #e3e6ea;
   text-align: center;
+  padding: 20px 20px 46px;
 }
-.procedures-img {
-  padding: 20px;
-  padding-bottom: 0;
+.procedures-item:hover {
+  border: none;
+  box-shadow: 0 10px 20px #e3e6ea;
 }
-.procedures .read-more-link {
-  max-width: 141px;
-  text-align: center;
-  padding: 19px 29px 17px 41px;
+
+.procedures-item:hover .read-more-link {
+  background-color: var(--accent-color);
 }
+
 .procedure-desc {
   padding-top: 40px;
   padding-bottom: 50px;
@@ -263,7 +284,7 @@ img {
 .title-prof {
   font-size: 22px;
   line-height: 1.22;
-  color: var(--title-color) 1;
+  color: var(--title-color);
   font-weight: 700;
   font-family: var(--secondary-font);
   text-align: center;
@@ -332,9 +353,22 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
-.team-cont {
-  width: 360px;
+
+.team-item:hover .social-list {
+  display: flex;
 }
+
+.team-cont {
+  border: 1px solid tomato;
+  width: 298px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.team-item:hover .team-cont {
+  box-shadow: 0 10px 20px #fcf5ee;
+}
+
 .team-description {
   font-size: 15px;
   line-height: 1.8;
@@ -344,10 +378,11 @@ img {
   text-align: center;
 }
 .social-list {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
+
 .social-link {
   display: inline-block;
   width: 30px;
@@ -360,21 +395,58 @@ img {
   margin-right: 14px;
 }
 /* FORM */
-.form-regisrer {
-  display: flex;
+
+.form {
+  background-color: #fff9f8;
+  background-image: url(../img/appointment-img.jpg);
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 130px;
 }
+
+.form .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 652px;
+}
+
 .form-list {
   width: 1143px;
-  background-color: #fff9f8;
 }
 .form-text {
+  width: 318px;
   font-size: 12px;
   line-height: 4.58;
   color: #999999;
   font-weight: 400;
   font-family: var(--main-font);
+  padding-top: 16px;
 }
+
+.form-text,
 .form-notes {
+  border: none;
+  border-bottom: 1px solid #e3e6ea;
+  background: transparent;
+  padding-bottom: 16px;
+}
+
+.form-text::placeholder,
+.form-notes::placeholder {
+  text-transform: uppercase;
+  color: #e3e6ea;
+}
+
+.form-notes {
+  width: 100%;
+
   font-size: 12px;
   line-height: 4.58;
   color: var(--item-color);
@@ -383,14 +455,16 @@ img {
 }
 .form-btn {
   font-size: 14px;
-  line-height: 3.9;
   color: #ffffff;
   font-weight: 500;
   font-family: var(--main-font);
   text-align: center;
   background-color: var(--accent-color);
-  border-radius: 25px;
-  min-width: 200px;
+  border-radius: 35px;
+  /* min-width: 200px; */
+  margin-top: 40px;
+  border: none;
+  padding: 18px 22px;
 }
 /* BLOG */
 .blog {
